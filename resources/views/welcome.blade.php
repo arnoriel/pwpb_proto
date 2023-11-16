@@ -110,10 +110,10 @@
                     <a class="nav-link disabled" aria-disabled="true"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#book">Book</a>
+                    <a class="nav-link active" href="/book">Buku</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -275,6 +275,7 @@
           </div>
         </div>
         <br> --}}
+        <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie imperdiet nisi, sed aliquet dolor auctor in. Sed faucibus justo vel nisi rhoncus, et tempor ipsum dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce in venenatis magna, quis gravida massa. Mauris eu sollicitudin dolor. Curabitur condimentum facilisis tincidunt. Mauris maximus dui quis nibh tempor pulvinar quis in nunc. Fusce lorem ipsum, venenatis id convallis vel, viverra sit amet ipsum. Ut at mollis neque. Morbi sit amet tincidunt libero. Curabitur semper ultricies lectus, eu vestibulum nunc. Phasellus et venenatis massa. Quisque ac augue purus. Sed turpis augue, iaculis pulvinar sapien ornare, venenatis viverra magna. Duis mauris ligula, congue sed erat nec, elementum tempus ex.</b></p>
         <br>
         <br>
         <br>

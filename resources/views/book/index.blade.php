@@ -6,11 +6,8 @@
 <div class="col-sm-3">
   </div>
   </div>
-  <section id="book" class="section">
-  <br>
-  <br>
-  <br>
   <center><h2><strong>Daftar Buku</strong></h2></center>
+  <br>
   <br>
   <br>
   <br>
@@ -18,12 +15,13 @@
     <div class="col-sm-11">
   <h4><strong>Rekomendasi Buku</strong></h4>
     </div>
+    <br>
+    <br>
+    <br>
     <div class="col">
   <i class="bi bi-funnel"></i>
     </div>
 </div>
-<br>
-<h4><strong>Education</strong></h4>
 <br>
 <div class="row">
 @foreach ($buku as $data)
@@ -34,14 +32,5 @@
 </div>
 @endforeach
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </div>
 @endsection

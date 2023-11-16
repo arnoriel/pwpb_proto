@@ -13,8 +13,8 @@
                     <p><strong>Genre : {{$buku->genre}}</strong></p>
                     <p><strong>Penerbit : {{$buku->penerbit}}</strong></p>
                     <p><strong>Tanggal Terbit : {{$buku->ttb}}</strong></p>
-                    <p><strong>Ketebalan Buku : {{$buku->tbl_buku}}</strong></p>
-                    <p><strong>Harga Buku : {{$buku->harga}}</strong></p>
+                    <p><strong>Ketebalan Buku : {{$buku->tbl_buku}} Lembar</strong></p>
+                    <p><strong>Harga Buku : Rp. {{$buku->harga}}</strong></p>
                     <p><strong>Nomor Edisi : {{$buku->no_edisi}}</strong></p>
                     <a link href="https://wa.me/6285797009915" class="btn btn-outline-dark">Pinjam Buku</a>
             </div>
@@ -22,6 +22,7 @@
             <br>
             <br>
             <h2><strong>Sinopsis</strong></h2>
+            <br>
             <p><strong>{{$buku->sinopsis}}</strong></p>
         <br>
         <br>

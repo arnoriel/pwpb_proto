@@ -11,40 +11,46 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card" style="margin: 10%;">
+                <div class="card" style="margin: 5%;">
                     <div class="card-header bg-success text-white">buku</div>
                     <div class="card-body">
                         <div class="form-group">
                             <label for=""><h5>Gambar</h5></label>
                             <br>
-                            <img src="{{$buku->gambar()}}" width="500px">
+                            <center>
+                            <img src="{{$buku->gambar()}}" width="300px">
+                            </center>
                             <br>
                             <label for=""><h5>Judul</h5></label>
                             <input type="text" name="judul" value="{{$buku->judul}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>creator</h5></label>
+                            <label for=""><h5>Creator</h5></label>
                             <input type="text" name="creator" value="{{$buku->creator}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>genre</h5></label>
+                            <label for=""><h5>Genre</h5></label>
                             <input type="text" name="genre" value="{{$buku->genre}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>penerbit</h5></label>
+                            <label for=""><h5>Penerbit</h5></label>
                             <input type="text" name="penerbit" value="{{$buku->penerbit}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>ttb</h5></label>
+                            <label for=""><h5>Tanggal Terbit Buku</h5></label>
                             <input type="date" name="ttb" value="{{$buku->ttb}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>tbl_buku</h5></label>
-                            <input type="text" name="tbl_buku" value="{{$buku->tbl_buku}}" class="form-control" readonly>
+                            <label for=""><h5>Tebal Buku</h5></label>
+                            <input type="text" name="tbl_buku" value="{{$buku->tbl_buku}} Lembar" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>harga</h5></label>
-                            <input type="text" name="harga" value="{{$buku->harga}}" class="form-control" readonly>
+                            <label for=""><h5>Harga</h5></label>
+                            <input type="text" name="harga" value="Rp. {{$buku->harga}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>no_edisi</h5></label>
+                            <label for=""><h5>Nomor Edisi</h5></label>
                             <input type="text" name="no_edisi" value="{{$buku->no_edisi}}" class="form-control" readonly>
                             <br>
-                            <label for=""><h5>sinopsis</h5></label>
-                            <input type="text" name="sinopsis" value="{{$buku->sinopsis}}" class="form-control" readonly>
+                            <label for=""><h5>Sinopsis</h5></label>
+                            <div class="card">
+                                <div class="card-body">
+                                    {{$buku->sinopsis}}
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <br>
