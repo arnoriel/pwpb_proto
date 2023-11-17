@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Membuat CRUD menggunakan Laravel PHp dan MySQL</title>
+    <title>Tambah Buku</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -26,7 +26,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">judul</label>
+                                <label for="">Judul</label>
                                 <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror">
                                 @error('judul')
                                 <span class="invalid-feedback" role="alert">
@@ -35,7 +35,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">creator</label>
+                                <label for="">Creator</label>
                                 <input type="text" name="creator" class="form-control @error('creator') is-invalid @enderror">
                                 @error('creator')
                                 <span class="invalid-feedback" role="alert">
@@ -44,16 +44,19 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">genre</label>
-                                <input type="text" name="genre" class="form-control @error('genre') is-invalid @enderror">
-                                @error('genre')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
+                                <label for="">Genre</label>
+                                 <select class="form-select" aria-label="Default select example" name="genre" id="" >
+                                    <option selected>Select Genre</option>
+                                   <option>Self-Improvement</option>
+                                   <option>Fantasy</option>
+                                   <option>Education</option>
+                                   <option>Sad</option>
+                                   <option>Slice of Life</option>
+                                   <option>Comedy</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="">penerbit</label>
+                                <label for="">Penerbit</label>
                                 <input type="text" name="penerbit" class="form-control @error('penerbit') is-invalid @enderror">
                                 @error('penerbit')
                                 <span class="invalid-feedback" role="alert">
@@ -62,7 +65,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">ttb</label>
+                                <label for="">Tanggal Terbit Buku</label>
                                 <input type="date" name="ttb" class="form-control @error('ttb') is-invalid @enderror">
                                 @error('ttb')
                                 <span class="invalid-feedback" role="alert">
@@ -71,7 +74,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">tbl_buku</label>
+                                <label for="">Tebal Buku</label>
                                 <input type="text" name="tbl_buku" class="form-control @error('tbl_buku') is-invalid @enderror">
                                 @error('tbl_buku')
                                 <span class="invalid-feedback" role="alert">
@@ -80,7 +83,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">harga</label>
+                                <label for="">Harga</label>
                                 <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror">
                                 @error('harga')
                                 <span class="invalid-feedback" role="alert">
@@ -89,7 +92,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">no_edisi</label>
+                                <label for="">No Edisi</label>
                                 <input type="text" name="no_edisi" class="form-control @error('no_edisi') is-invalid @enderror">
                                 @error('no_edisi')
                                 <span class="invalid-feedback" role="alert">
@@ -98,7 +101,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">sinopsis</label>
+                                <label for="">Sinopsis</label>
                                 <input type="text" name="sinopsis" class="form-control @error('sinopsis') is-invalid @enderror">
                                 @error('sinopsis')
                                 <span class="invalid-feedback" role="alert">

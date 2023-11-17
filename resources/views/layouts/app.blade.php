@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>BookMark.</title>
 
     <!-- Fonts -->
     {{-- <link rel="dns-prefetch" href="//fonts.bunny.net"> --}}
@@ -39,6 +39,37 @@
                             <a class="nav-link active" aria-current="page" href="/buku">Buku</a>
                           </li>
                           <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/popbuku">Buku Populer</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Preview Situs</a>
+                          </li>
+                          
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                        
+                                {{ Auth::user()->name }}
+                                
+                            </li>
+                        @endguest
+                        <li class="nav-item">
                             <!-- Button trigger modal -->
 <a class="nav-link active" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Logout
@@ -71,34 +102,6 @@
     </div>
   </div>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Preview Situs</a>
-                          </li>
-                          
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                        
-                                {{ Auth::user()->name }}
-                                
-                            </li>
-                        @endguest
                     </ul>
                 </div>
             </div>

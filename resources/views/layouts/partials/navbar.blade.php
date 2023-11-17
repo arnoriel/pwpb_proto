@@ -88,15 +88,18 @@
             <a class="nav-link disabled" aria-disabled="true"></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/book">Buku</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        </form>
       </div>
     </div>
   </nav>

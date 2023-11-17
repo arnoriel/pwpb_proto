@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\PopbukuController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +28,12 @@ Auth::routes();
 Route::get('/buku', function () {
     return view('buku.index');
 });
+Route::get('/popbuku', function () {
+    return view('popbuku.index');
+});
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 route::resource('buku', BukuController::class);
 Route::get('/book', [App\Http\Controllers\BukuController::class, 'index2']);
 Route::get('/book/{id}', [App\Http\Controllers\BukuController::class, 'detail']);
+Route::resource('popbuku', PopbukuController::class);
+Route::get('/book', [App\Http\Controllers\PopbukuController::class, 'indexpop']);

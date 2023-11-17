@@ -31,4 +31,10 @@ class Buku extends Model
         }
 
     }
+
+    public function popbuku()
+    {
+        $this->hasMany('App\Models\Popbuku', 'buku_id');
+    }
+
 }
