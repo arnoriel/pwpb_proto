@@ -94,7 +94,7 @@
             <a class="nav-link disabled" aria-disabled="true"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Beranda</a>
+            <a class="nav-link active" aria-current="page" href="/beranda">Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/book">Buku</a>

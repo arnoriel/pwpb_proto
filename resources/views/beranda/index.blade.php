@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    @foreach ($setting as $data)
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BookMark.</title>
+        <title>{{$data->aplikasi}}</title>
 
         <!-- Fonts -->
         {{-- <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,15 +18,185 @@
         </style> --}}
     </head>
     <body class="antialiased">
-      <br>
-      <br>
-      <br>
-      <center> 
-      <h2>Halo! Selamat Datang di Aplikasi Perpustakan!</h2>
-      <br>
-      <a href="/beranda" class="btn btn-primary">Ke Beranda</a>
-      </center>
-      
+        
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0E1D35">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><strong>{{$data->aplikasi}}</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/book">Buku</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div class="row">
+              <div class="col-sm-7">
+          <h1><strong>{{$data->aplikasi}}</strong></h1>
+          <p style="width: 30rem;"><strong>{{$data->info}}</strong></p>
+          <a href="/book" class="btn btn-outline-dark">Lihat Buku</a>
+              </div>
+          <div class="col-sm-3">
+            <img src="{{$data->gambar()}}" style="width: 500px;">
+            </div>
+            </div>
+            <section id="book" class="section">
+            <br>
+            <br>
+            <br>
+        <p><b>{{$data->bio}}</b></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+        <div class="card text-white" style="background-color: #0E1D35; height: 300px;">
+          <div class="card-body">
+            <div class="container">
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+              <h1><strong>{{$data->aplikasi}}</strong></h1>
+                </div>
+                <div class="col-2">
+                  <h5><strong>CONTACT</strong></h5>
+                </div>
+                <div class="col-2">
+                  <h5><strong>BLOG</strong></h5>
+                </div>
+                <div class="col-2">
+                  <h5><strong>PRODUCT</strong></h5>
+                </div>
+              </div>
+            <br>
+            <a href="#book" class="btn btn-outline-light">Lihat Buku</a>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-1">
+            <i class="bi bi-twitter-x"></i>
+              </div>
+              <div class="col-1">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="col">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+            <br>
+            <p>2023 Acelabs</p>
+          </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       
     </body>
+    @endforeach
 </html>
