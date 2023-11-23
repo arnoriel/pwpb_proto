@@ -69,9 +69,10 @@ class SettingController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Setting $setting)
+    public function show($id)
     {
-        //
+        $setting = Setting::findOrFail($id);
+        return view('book.show', compact('setting'));
     }
 
     /**

@@ -23,7 +23,7 @@
     
     <body class="antialiased">
         
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #0E1D35">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #003BA7">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><strong>{{$sets->aplikasi}}</strong></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
