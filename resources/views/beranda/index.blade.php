@@ -141,7 +141,7 @@
           <a href="/book" class="btn btn-outline-dark">Lihat Buku</a>
               </div>
           <div class="col-sm-3">
-            <img src="{{$data->gambar()}}" style="width: 500px;">
+            <img src="{{$data->gambar()}}" style="width: 400px;">
             </div>
             </div>
             <section id="book" class="section">
@@ -158,7 +158,7 @@
         <br>
         <br>
       </div>
-        <div class="card text-white" style="background-color: #003BA7; height: 300px;">
+        <div class="card text-white" style="background-color: #003BA7; height: 350px;">
           <div class="card-body">
             <div class="container">
               <br>
@@ -177,7 +177,7 @@
                 </div>
               </div>
             <br>
-            <a href="#book" class="btn btn-outline-light">Lihat Buku</a>
+            <a href="/book" class="btn btn-outline-light">Lihat Buku</a>
             <br>
             <br>
             <div class="row">

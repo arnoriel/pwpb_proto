@@ -32,6 +32,12 @@ class SettingController extends Controller
         return view ('book.index', compact ('setting', 'popbuku', 'buku'));
     }
 
+    public function masterset()
+    {
+        $setting=Setting::all();
+        return view ('layouts.user', compact ('setting'))->with('setting', $setting);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -71,8 +77,8 @@ class SettingController extends Controller
      */
     public function show($id)
     {
-        $setting = Setting::findOrFail($id);
-        return view('book.show', compact('setting'));
+        // $setting = Setting::findOrFail($id);
+        // return view('book.show', compact('setting'));
     }
 
     /**

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BookMark.</title>
+        <title>Perpustakaan Digital</title>
 
         <!-- Fonts -->
         {{-- <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,13 +17,11 @@
         </style> --}}
     </head>
     <body class="antialiased">
+      <center style="margin: 15%;"> 
+      <h2>Halo! Selamat Datang di Aplikasi Perpustakan Digital!</h2>
       <br>
-      <br>
-      <br>
-      <center> 
-      <h2>Halo! Selamat Datang di Aplikasi Perpustakan!</h2>
-      <br>
-      <a href="/beranda" class="btn btn-primary">Ke Beranda</a>
+      <a href="/beranda" class="btn btn-primary">Ke Beranda Aplikasi</a>
+      <a href="/login" class="btn btn-warning">Log In Admin</a>
       </center>
       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

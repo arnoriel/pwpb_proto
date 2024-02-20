@@ -19,6 +19,9 @@ use App\Http\Controllers\SettingController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/testai', function () {
+    return view('testai');
+});
 Route::get('/books', function () {
     return view('buku');
 });
@@ -47,3 +50,4 @@ Route::get('/book', [App\Http\Controllers\PopbukuController::class, 'indexpop'])
 Route::get('/book', [App\Http\Controllers\SettingController::class, 'setbook']);
 route::resource('setting', SettingController::class);
 Route::get('/beranda', [App\Http\Controllers\SettingController::class, 'indexset']);
+Route::get('/layouts', [App\Http\Controllers\SettingController::class, 'masterset']);
